@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Home | Oribut Company Ltd</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
+		rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="topbar">
+		<div class="container d-flex justify-content-end"><a href="contact.html" class="topbar-link">Find Shine near you</a>
+		</div>
+	</div>
+	<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top py-2" id="site-header">
+		<div class="container flex-wrap"><a class="navbar-brand d-flex align-items-center gap-2" href="index.html"><img
+					src="images/logo.webp" alt="Shine" class="brand-logo"><span
+					
+						class="brand-caption-sub">Made in Rwanda </span></span></a><button class="navbar-toggler"
+				type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"><span
+					class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="navMenu">
+				<ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2 mt-3 mt-lg-0">
+					<li class="nav-item"><a class="nav-link nav-pill " href="index.html">Home</a></li>
+					<li class="nav-item"><a class="nav-link " href="about.html">About us</a></li>
+					<li class="nav-item"><a class="nav-link " href="hair-care.html">Hair care</a></li>
+					<li class="nav-item"><a class="nav-link " href="home-care.html">Home care</a></li>
+					<li class="nav-item"><a class="nav-link " href="personal-care.html">Personal care</a></li>
+					<li class="nav-item"><a class="nav-link " href="why-shine.html">Why Oribut</a></li>
+					<li class="nav-item"><a class="nav-link " href="careers.html">Careers</a></li>
+					<li class="nav-item"><a class="nav-link " href="contact.html">Contact us</a></li>
+					<li class="nav-item"><a class="nav-link nav-contact" href="order.html">Order now</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="brand-stripe"></div>
+	</nav>
+	<section class="page-hero">
+		
+		<div class="page-hero-media"><video autoplay muted loop playsinline preload="auto"
+					poster="images/hero-products.webp">
+					<source src="video/shine-hero-bg.mp4" type="video/mp4">
+				</video></div>
+		<div class="page-hero-overlay"></div>
+		<div class="container page-hero-content" data-reveal><span class="eyebrow eyebrow-light"><span
+					class="eyebrow-dash"></span>SHINE PRODUCTS — MADE IN RWANDA</span>
+			<h1>Made for you, made in Rwanda.</h1>
+			<p>Discover locally manufactured hair care, personal care, laundry and home-care products from Oribut Company Ltd.
+			</p>
+		</div>
+	</section>
+	<!-- ================= NEW PRODUCT ADVERTISEMENT ================= -->
+	<!-- HOW TO ADD A NEW AD: copy one whole <div class="carousel-item"> ... </div> block below, paste it after the last one,
+	     change the image, title, text and link. Add one more <button> in the "promo-dots" list (data-bs-slide-to = next number).
+	     Only ONE slide should have class "active" (the first). Put new images in the images/ folder. -->
+	<section class="promo-section" id="new-products" aria-label="New products">
+		<div class="container">
+			<div class="promo-head" data-reveal>
+				<span class="promo-tag"><i class="bi bi-stars"></i> Just launched</span>
+				<h2>Our new Product from <span>Shine</span></h2>
+			</div>
+			<div id="promoCarousel" class="carousel slide promo-carousel" data-bs-ride="carousel" data-bs-interval="6500">
+				<div class="carousel-inner">
+
+					<!-- Slide 1 -->
+					<div class="carousel-item active">
+						<div class="promo-slide">
+							<div class="promo-copy">
+								<span class="promo-badge">NEW</span>
+								<h3>Shine Paper Serviettes</h3>
+								<p class="promo-sub">Clean comfort for everyday</p>
+								<p>Soft, gentle and highly absorbent white napkins. Hygienic and safe for your table, kitchen and every moment in between.</p>
+								<ul class="promo-points">
+									<li><i class="bi bi-check-circle-fill"></i> Soft &amp; gentle</li>
+									<li><i class="bi bi-check-circle-fill"></i> Highly absorbent</li>
+									<li><i class="bi bi-check-circle-fill"></i> Approx. 100 sheets per pack</li>
+								</ul>
+								<div class="promo-actions">
+									<a href="order.html?product=Napkins%20%26%20Toilet%20Paper" class="btn-promo">Order now <i class="bi bi-arrow-right"></i></a>
+									<a href="home-care.html" class="btn-promo-ghost">See range</a>
+								</div>
+							</div>
+							<div class="promo-media" style="--promo-bg:url('images/new-serviettes.jpg')">
+								<img src="images/new-serviettes.jpg" alt="Shine Paper Serviettes napkins, white, 100 sheets" loading="lazy">
+							</div>
+						</div>
+					</div>
+
+					<!-- Slide 2 -->
+					<div class="carousel-item">
+						<div class="promo-slide">
+							<div class="promo-copy">
+								<span class="promo-badge">NEW</span>
+								<h3>Kitchen Towel </h3>
+								<p class="promo-sub">2-ply strength</p>
+								<p>Wipe, dry and clean with strong, absorbent kitchen towel, paired with soft for the whole household.</p>
+								<ul class="promo-points">
+									<li><i class="bi bi-check-circle-fill"></i> 2-ply kitchen towel</li>
+									<li><i class="bi bi-check-circle-fill"></i> 100 sheets per roll</li>
+									<li><i class="bi bi-check-circle-fill"></i> Made in Rwanda</li>
+								</ul>
+								<div class="promo-actions">
+									<a href="order.html?product=Napkins%20%26%20Toilet%20Paper" class="btn-promo">Order now <i class="bi bi-arrow-right"></i></a>
+									<a href="home-care.html" class="btn-promo-ghost">See range</a>
+								</div>
+							</div>
+							<div class="promo-media" style="--promo-bg:url('images/new-kitchen-towel.jpg')">
+								<img src="images/towels.jpeg" alt="Shine 2-ply kitchen towel and paper serviettes" loading="lazy">
+							</div>
+						</div>
+					</div>
+
+				</div>
+<!-- Slide 3 -->
+				<div class="carousel-item">
+						<div class="promo-slide">
+							<div class="promo-copy">
+								<span class="promo-badge">NEW</span>
+								<h3>Shine Hair Food &amp; Hair Food</h3>
+								<p class="promo-sub">Hair nourishment & care</p>
+								<p>Nourishing hair food formulated for everyday hair care, styling, and moisture. Suitable for maintaining soft, manageable and healthy-looking hair.</p>
+								<ul class="promo-points">
+									<li><i class="bi bi-check-circle-fill"></i> Hair nourishment & care</li>
+									<li><i class="bi bi-check-circle-fill"></i> Suitable for everyday use</li>
+									<li><i class="bi bi-check-circle-fill"></i> Made in Rwanda</li>
+								</ul>
+								<div class="promo-actions">
+									<a href="order.html?product=Napkins%20%26%20Toilet%20Paper" class="btn-promo">Order now <i class="bi bi-arrow-right"></i></a>
+									<a href="home-care.html" class="btn-promo-ghost">See range</a>
+								</div>
+							</div>
+							<div class="promo-media" style="--promo-bg:url('images/new-kitchen-towel.jpg')">
+								<img src="images/hero-products.webp" alt="Shine 2-ply kitchen towel and paper serviettes" loading="lazy">
+							</div>
+						</div>
+					</div>
+                <!-- Slide 4 -->
+				<div class="carousel-item">
+						<div class="promo-slide">
+							<div class="promo-copy">
+								<span class="promo-badge">NEW</span>
+								<h3>Leave -in Treatment </h3>
+								<p class="promo-sub">Hair nourishment & care</p>
+								<p>Lightweight leave-in treatment formulated for everyday hair care, moisture, and easy styling. Keeps hair soft, manageable, and healthy-looking without rinsing.</p>
+								<ul class="promo-points">
+									<li><i class="bi bi-check-circle-fill"></i> Daily hair care</li>
+									<li><i class="bi bi-check-circle-fill"></i> Moisture & softness</li>
+									<li><i class="bi bi-check-circle-fill"></i> Made in Rwanda</li>
+								</ul>
+								<div class="promo-actions">
+									<a href="order.html?product=Napkins%20%26%20Toilet%20Paper" class="btn-promo">Order now <i class="bi bi-arrow-right"></i></a>
+									<a href="home-care.html" class="btn-promo-ghost">See range</a>
+								</div>
+							</div>
+							<div class="promo-media" style="--promo-bg:url('images/new-kitchen-towel.jpg')">
+								<img src="images/leave-in.jpg" alt="Shine 2-ply kitchen towel and paper serviettes" loading="lazy">
+							</div>
+						</div>
+					</div>
+					 <!-- Slide 5 -->
+				<div class="carousel-item">
+						<div class="promo-slide">
+							<div class="promo-copy">
+								<span class="promo-badge">NEW</span>
+								<h3>Shine hair Spray </h3>
+								<p class="promo-sub">Hair nourishment & care</p>
+								<p>Keep your braids looking beautiful with Shine Miracle Braid Spray! Designed for your braided hairstyles, it adds a fresh touch to your hair-care routine and keeps your braids looking neat and attractive.</p>
+								<ul class="promo-points">
+									<li><i class="bi bi-check-circle-fill"></i> Daily hair care</li>
+									<li><i class="bi bi-check-circle-fill"></i> Moisture & softness</li>
+									<li><i class="bi bi-check-circle-fill"></i> Made in Rwanda</li>
+								</ul>
+								<div class="promo-actions">
+									<a href="order.html?product=Napkins%20%26%20Toilet%20Paper" class="btn-promo">Order now <i class="bi bi-arrow-right"></i></a>
+									<a href="home-care.html" class="btn-promo-ghost">See range</a>
+								</div>
+							</div>
+							<div class="promo-media" style="--promo-bg:url('images/new-kitchen-towel.jpg')">
+								<img src="images/Shine Miracle Haircare Trio.png" alt="Shine 2-ply kitchen towel and paper serviettes" loading="lazy">
+							</div>
+						</div>
+					</div>
+                    <!-- Slide 6 -->
+				<div class="carousel-item">
+						<div class="promo-slide">
+							<div class="promo-copy">
+								<span class="promo-badge">NEW</span>
+								<h3>Shine hair Relaxer</h3>
+								<p class="promo-sub">Hair nourishment & care</p>
+								<p>Get the smooth, sleek hairstyle you desire with Shine Hair Relaxer. Specially designed to relax curly and coily hair for a straighter look.</p>
+								<ul class="promo-points">
+									<li><i class="bi bi-check-circle-fill"></i> Love your hair</li>
+									<li><i class="bi bi-check-circle-fill"></i> Love your style</li>
+									<li><i class="bi bi-check-circle-fill"></i> Made in Rwanda</li>
+								</ul>
+								<div class="promo-actions">
+									<a href="order.html?product=Napkins%20%26%20Toilet%20Paper" class="btn-promo">Order now <i class="bi bi-arrow-right"></i></a>
+									<a href="home-care.html" class="btn-promo-ghost">See range</a>
+								</div>
+							</div>
+							<div class="promo-media" style="--promo-bg:url('images/new-kitchen-towel.jpg')">
+								<img src="images/Shine Hair Care Spa Display.png" alt="Shine 2-ply kitchen towel and paper serviettes" loading="lazy">
+							</div>
+						</div>
+					</div>
+					 <!-- Slide 7 -->
+				<div class="carousel-item">
+						<div class="promo-slide">
+							<div class="promo-copy">
+								<span class="promo-badge">NEW</span>
+								<h3>Shine hair Spray </h3>
+								<p class="promo-sub">Hair nourishment & care</p>
+								<p>Keep your braids looking beautiful with Shine Miracle Braid Spray! Designed for your braided hairstyles, it adds a fresh touch to your hair-care routine and keeps your braids looking neat and attractive.</p>
+								<ul class="promo-points">
+									<li><i class="bi bi-check-circle-fill"></i> Daily hair care</li>
+									<li><i class="bi bi-check-circle-fill"></i> Moisture & softness</li>
+									<li><i class="bi bi-check-circle-fill"></i> Made in Rwanda</li>
+								</ul>
+								<div class="promo-actions">
+									<a href="order.html?product=Napkins%20%26%20Toilet%20Paper" class="btn-promo">Order now <i class="bi bi-arrow-right"></i></a>
+									<a href="home-care.html" class="btn-promo-ghost">See range</a>
+								</div>
+							</div>
+							<div class="promo-media" style="--promo-bg:url('images/new-kitchen-towel.jpg')">
+								<img src="images/Shine Miracle Haircare Trio.png" alt="Shine 2-ply kitchen towel and paper serviettes" loading="lazy">
+							</div>
+						</div>
+					</div>
+				</div>
+					
+				
+
+				<div class="promo-controls">
+					<div class="promo-dots carousel-indicators">
+						<button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#promoCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+					</div>
+					<div class="promo-arrows">
+						<button type="button" data-bs-target="#promoCarousel" data-bs-slide="prev" aria-label="Previous"><i class="bi bi-chevron-left"></i></button>
+						<button type="button" data-bs-target="#promoCarousel" data-bs-slide="next" aria-label="Next"><i class="bi bi-chevron-right"></i></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="page-section">
+		<div class="container">
+			<div class="row g-4">
+				<div class="col-lg-7"><span class="section-kicker">Explore the range</span>
+					<h2 class="page-title">Shop Our Products.</h2>
+					<p class="page-lead">Find the right category, explore the products and move directly to an order enquiry.</p>
+				</div>
+			</div>
+			<div class="row g-4 mt-3">
+				<div class="col-md-4"><a href="hair-care.html" class="smart-card d-block text-decoration-none">
+						<div class="icon"><i class="bi bi-stars"></i></div>
+						<h3>Hair Care</h3>
+						<p>Shampoo, conditioner, styling and nourishment.</p><span class="btn-smart">Explore <i
+								class="bi bi-arrow-right"></i></span>
+					</a></div>
+				<div class="col-md-4"><a href="personal-care.html" class="smart-card d-block text-decoration-none">
+						<div class="icon"><i class="bi bi-person-heart"></i></div>
+						<h3>Personal Care</h3>
+						<p>Everyday grooming and personal-care essentials.</p><span class="btn-smart">Explore <i
+								class="bi bi-arrow-right"></i></span>
+					</a></div>
+				<div class="col-md-4"><a href="home-care.html" class="smart-card d-block text-decoration-none">
+						<div class="icon"><i class="bi bi-house-heart"></i></div>
+						<h3>Laundry & Home Care</h3>
+						<p>Cleaning, laundry and household essentials.</p><span class="btn-smart">Explore <i
+								class="bi bi-arrow-right"></i></span>
+					</a></div>
+			</div>
+		</div>
+	</section>
+	<section class="page-section bg-tint">
+		<div class="container">
+			<div class="row g-4 align-items-center">
+				<div class="col-lg-6"><span class="section-kicker">Why Oribut</span>
+					<h2 class="page-title">Local production with a practical purpose.</h2>
+					<p class="page-lead">Oribut brings multiple everyday categories together so customers and trade partners can
+						discover and source products from one local manufacturer.</p><a href="why-shine.html"
+						class="btn-smart mt-3">Why Oribut <i class="bi bi-arrow-right"></i></a>
+				</div>
+				<div class="col-lg-6">
+					<div class="row g-3">
+						<div class="col-6">
+							<div class="stat-mini"><strong>2016</strong><span>Manufacturing journey</span></div>
+						</div>
+						<div class="col-6">
+							<div class="stat-mini"><strong>30+</strong><span>Products</span></div>
+						</div>
+						<div class="col-12">
+							<div class="smart-card">
+								<h3>Ready to order?</h3>
+								<p>Send an enquiry with the products and quantities you need.</p><a href="order.html"
+									class="btn-smart">Start an order</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="row g-5 pb-4 border-bottom border-light border-opacity-10">
+				<div class="col-lg-4">
+					<div class="d-flex align-items-center gap-3">
+						<div class="footer-logo-badge"><img src="images/logo.webp" alt="Shine" class="footer-shine-logo"></div><span
+							class="footer-manufacturer">Manufactured by<br><strong>Oribut Company Ltd</strong></span>
+					</div>
+					<div class="brand-dots"><span></span><span></span><span></span></div>
+					<p class="foot-desc mt-3">Oribut Company Ltd — personal care, laundry and home care products manufactured in
+						Rwanda.</p>
+				</div>
+				<div class="col-6 col-lg-2">
+					<h4 class="foot-heading">Products</h4>
+					<ul class="list-unstyled foot-links">
+						<li><a href="products.html">All Products</a></li>
+						<li><a href="hair-care.html">Hair Care</a></li>
+						<li><a href="personal-care.html">Personal Care</a></li>
+						<li><a href="home-care.html">Home & Laundry</a></li>
+					</ul>
+				</div>
+				<div class="col-6 col-lg-3">
+					<h4 class="foot-heading">Company</h4>
+					<ul class="list-unstyled foot-links">
+						<li><a href="about.html">About</a></li>
+						<li><a href="why-shine.html">Why Oribut</a></li>
+						<li><a href="careers.html">Careers</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+				<div class="col-6 col-lg-3">
+					<h4 class="foot-heading">Order</h4>
+					<ul class="list-unstyled foot-links">
+						<li><a href="order.html">Place an order</a></li>
+						<li><a href="tel:+250790666679">0790666679</a></li>
+						<li><a href="https://wa.me/250790666679" target="_blank">WhatsApp</a></li>
+						<li><a href="mailto:oributcustomerservice@gmail.com">oributcustomerservice@gmail.com</a></li>
+						<li><a href="mailto:info@oributcompany.com">info@oributcompany.com</a></li>
+						<li><a href="www.oributcompany.com">www.oributcompany.com</a></li>
+					
+					</ul> 
+				</div>
+			</div>
+			<div class="d-flex flex-wrap justify-content-between pt-4 foot-bottom"><span>© 2026 Oribut Company Ltd. All rights
+					reserved.</span><span>Made in Rwanda</span></div>
+		</div>
+	</footer><a href="https://wa.me/250790666679" target="_blank" class="floating-chat">Talk to us <span
+			class="floating-chat-icon"><i class="bi bi-whatsapp"></i></span></a>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="app.js"></script>
+</body>
+
+</html>

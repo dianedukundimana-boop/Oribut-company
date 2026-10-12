@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Order | Oribut Company Ltd</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
+		rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="topbar">
+		<div class="container d-flex justify-content-end"><a href="contact.html" class="topbar-link">Find Shine near you</a>
+		</div>
+	</div>
+	<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top py-2" id="site-header">
+		<div class="container flex-wrap"><a class="navbar-brand d-flex align-items-center gap-2" href="index.html"><img
+					src="images/logo.webp" alt="Shine" class="brand-logo"><span
+					
+						class="brand-caption-sub">Made in Rwanda </span></span></a><button class="navbar-toggler"
+				type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"><span
+					class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="navMenu">
+				<ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2 mt-3 mt-lg-0">
+					<li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+					<li class="nav-item"><a class="nav-link " href="about.html">About us</a></li>
+					<li class="nav-item"><a class="nav-link " href="hair-care.html">Hair care</a></li>
+					<li class="nav-item"><a class="nav-link " href="home-care.html">Home care</a></li>
+					<li class="nav-item"><a class="nav-link " href="personal-care.html">Personal care</a></li>
+					<li class="nav-item"><a class="nav-link " href="why-shine.html">Why Oribut</a></li>
+					<li class="nav-item"><a class="nav-link " href="careers.html">Careers</a></li>
+					<li class="nav-item"><a class="nav-link " href="contact.html">Contact us</a></li>
+					<li class="nav-item"><a class="nav-link nav-contact" href="order.html">Order now</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="brand-stripe"></div>
+	</nav>
+	<section class="page-hero">
+		<div class="page-hero-media"><img src="images/Order.jpg" alt="Build your order enquiry."></div>
+		<div class="page-hero-overlay"></div>
+		<div class="container page-hero-content" data-reveal><span class="eyebrow eyebrow-light"><span
+					class="eyebrow-dash"></span>ORDER</span>
+			<h1>Build your order enquiry.</h1>
+			<p>Choose products and quantities, then send the request to the Oribut team. This version is designed to work
+				without a backend and can be connected to your stock/order system later.</p>
+		</div>
+	</section>
+	<section class="page-section">
+		<div class="container">
+			<div class="row g-5">
+				<div class="col-lg-7">
+					<div class="smart-card">
+						<h2 class="page-title">Order request</h2>
+						<form id="orderForm">
+							<div class="row g-3">
+								<div class="col-md-6"><label class="form-label">Customer name</label><input required
+										class="form-control" id="orderName"></div>
+								<div class="col-md-6"><label class="form-label">Phone / WhatsApp</label><input required
+										class="form-control" id="orderPhone"></div>
+								<div class="col-12"><label class="form-label">Product</label><select required class="form-select"
+										id="orderProduct">
+										<option value="">Select a product</option>
+										<option>Nourishing Hair Food</option>
+										<option>Hair Relaxer</option>
+										<option>Shine Hair Shampoo — Green 5L</option>
+										<option>Shine Hair Shampoo — Yellow 5L</option>
+										<option>Shine Hair Shampoo — Blue 5L</option>
+										<option>Hair Cream Conditioner — White 5L</option>
+										<option>Hair Cream Conditioner — Yellow 5L</option>
+										<option>Shine Hair Gel 120g</option>
+										<option>Shine Dishwashing Liquid 1L</option>
+										<option>General Purpose Cleaner — Green 5L</option>
+										<option>General Purpose Cleaner — Orange 5L</option>
+										<option>Hand Dishwashing Liquid 5L</option>
+										<option>Hand Wash Liquid</option>
+										<option>Fabric Softener 5L</option>
+										<option>Fabric Softener — Blue</option>
+										<option>Fabric Softener — Pink</option>
+										<option>Liquid Glass Cleaner</option>
+										<option>Napkins & Toilet Paper</option>
+										<option>Toilet Paper</option>
+										<option>Nail Polish Remover 100ml</option>
+										<option>Nail Polish Remover 1L</option>
+										<option>Pure Glycerine</option>
+										<option>Glyseline White</option>
+									</select></div>
+								<div class="col-md-4"><label class="form-label">Quantity</label><input required min="1" type="number"
+										value="1" class="form-control" id="orderQty"></div>
+								<div class="col-md-8"><label class="form-label">Additional note</label><input class="form-control"
+										id="orderNote" placeholder="Size, colour, delivery note..."></div>
+							</div><button type="submit" class="btn-smart mt-4">Send order request <i
+									class="bi bi-whatsapp"></i></button>
+						</form>
+					</div>
+				</div>
+				<div class="col-lg-5">
+					<div class="detail-panel"><span class="section-kicker">How it works</span>
+						<ol class="body-copy" style="line-height:2">
+							<li>Select the product.</li>
+							<li>Enter quantity and contact details.</li>
+							<li>Send the request to the Oribut team.</li>
+							<li>Our team confirms availability and next steps.</li>
+						</ol>
+						<hr>
+						<p class="mb-0"><strong>Trade customers:</strong> Contact us for larger quantities and distribution
+							enquiries.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="row g-5 pb-4 border-bottom border-light border-opacity-10">
+				<div class="col-lg-4">
+					<div class="d-flex align-items-center gap-3">
+						<div class="footer-logo-badge"><img src="images/logo.webp" alt="Shine" class="footer-shine-logo"></div><span
+							class="footer-manufacturer">Manufactured by<br><strong>Oribut Company Ltd</strong></span>
+					</div>
+					<div class="brand-dots"><span></span><span></span><span></span></div>
+					<p class="foot-desc mt-3">Oribut Company Ltd — personal care, laundry and home care products manufactured in
+						Rwanda.</p>
+				</div>
+				<div class="col-6 col-lg-2">
+					<h4 class="foot-heading">Products</h4>
+					<ul class="list-unstyled foot-links">
+						<li><a href="products.html">All Products</a></li>
+						<li><a href="hair-care.html">Hair Care</a></li>
+						<li><a href="personal-care.html">Personal Care</a></li>
+						<li><a href="home-care.html">Home & Laundry</a></li>
+					</ul>
+				</div>
+				<div class="col-6 col-lg-3">
+					<h4 class="foot-heading">Company</h4>
+					<ul class="list-unstyled foot-links">
+						<li><a href="about.html">About</a></li>
+						<li><a href="why-shine.html">Why Oribut</a></li>
+						<li><a href="careers.html">Careers</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+				<div class="col-6 col-lg-3">
+					<h4 class="foot-heading">Order</h4>
+					<ul class="list-unstyled foot-links">
+						<li><a href="order.html">Place an order</a></li>
+						<li><a href="tel:+250790666679">0790666679</a></li>
+						<li><a href="https://wa.me/250790666679" target="_blank">WhatsApp</a></li>
+						<li><a href="mailto:oributcoltd@gmail.com">oributcustomerservice@gmail.com</a></li>
+						
+						<li><a href="mailto:info@oributcompany.com">info@oributcompany.com</a></li>
+						<li><a href="www.oributcompany.com">www.oributcompany.com</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="d-flex flex-wrap justify-content-between pt-4 foot-bottom"><span>© 2026 Oribut Company Ltd. All rights
+					reserved.</span><span>Made in Rwanda</span></div>
+		</div>
+	</footer><a href="https://wa.me/250790666679" target="_blank" class="floating-chat">Talk to us <span
+			class="floating-chat-icon"><i class="bi bi-whatsapp"></i></span></a>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="app.js"></script>
+</body>
+
+</html>

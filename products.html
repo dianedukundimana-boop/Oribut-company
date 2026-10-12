@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Products | Oribut Company Ltd</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
+		rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="topbar">
+		<div class="container d-flex justify-content-end"><a href="contact.html" class="topbar-link">Find Shine near you</a>
+		</div>
+	</div>
+	<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top py-2" id="site-header">
+		<div class="container flex-wrap"><a class="navbar-brand d-flex align-items-center gap-2" href="index.html"><img
+					src="images/logo.webp" alt="Shine" class="brand-logo"><span
+					
+						class="brand-caption-sub">Made in Rwanda</span></span></a><button class="navbar-toggler"
+				type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"><span
+					class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="navMenu">
+				<ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2 mt-3 mt-lg-0">
+					<li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+					<li class="nav-item"><a class="nav-link " href="about.html">About us</a></li>
+					<li class="nav-item"><a class="nav-link " href="hair-care.html">Hair care</a></li>
+					<li class="nav-item"><a class="nav-link " href="home-care.html">Home care</a></li>
+					<li class="nav-item"><a class="nav-link " href="personal-care.html">Personal care</a></li>
+					<li class="nav-item"><a class="nav-link " href="why-shine.html">Why Oribut</a></li>
+					<li class="nav-item"><a class="nav-link " href="careers.html">Careers</a></li>
+					<li class="nav-item"><a class="nav-link " href="contact.html">Contact us</a></li>
+					<li class="nav-item"><a class="nav-link nav-contact" href="order.html">Order now</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="brand-stripe"></div>
+	</nav>
+	<section class="page-hero">
+		<div class="page-hero-media"><img src="images/hero-products.webp" alt="A complete range for everyday care."></div>
+		<div class="page-hero-overlay"></div>
+		<div class="container page-hero-content" data-reveal><span class="eyebrow eyebrow-light"><span
+					class="eyebrow-dash"></span>OUR PRODUCTS</span>
+			<h1>A complete range for everyday care.</h1>
+			<p>Explore Shine products by category, search by name, and move directly from product discovery to an order
+				enquiry.</p>
+		</div>
+	</section>
+	<div class="smart-filter">
+		<div class="container">
+			<div class="row g-3 align-items-center">
+				<div class="col-lg-5">
+					<div class="search-wrap"><i class="bi bi-search"></i><input id="smartProductSearch" class="smart-search"
+							placeholder="Search products..."></div>
+				</div>
+				<div class="col-lg-7">
+					<div class="category-nav m-0"><button class="category-chip active" data-smart-filter="all">All</button><button
+							class="category-chip" data-smart-filter="hair">Hair Care</button><button class="category-chip"
+							data-smart-filter="personal">Personal Care</button><button class="category-chip"
+							data-smart-filter="cleaning">Home & Laundry</button></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<section class="page-section">
+		<div class="container">
+			<div id="smartProductGrid" class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
+				<div class="col" data-product data-category="hair" data-name="nourishing hair food">
+					<article class="smart-product">
+						<div class="smart-product-image"><img src="images/hair-food.jpg" alt="Nourishing Hair Food" loading="lazy">
+						</div>
+						<div class="smart-product-body"><span class="smart-product-category">Hair care</span>
+							<h3>Nourishing Hair Food</h3>
+							<p class="body-copy small">Nourishes and helps keep hair soft and manageable.</p>
+							<div class="product-actions"><a href="order.html?product=Nourishing%20Hair%20Food" class="btn-smart">Order
+									<i class="bi bi-arrow-right"></i></a><a href="contact.html" class="btn-smart btn-smart-outline">Ask
+									us</a></div>
+						</div>
+					</article>
+				</div>
+				<div class="col" data-product data-category="hair" data-name="hair relaxer">
+					<article class="smart-product">
+						<div class="smart-product-image"><img src="images/relaxer.jpg" alt="Hair Relaxer" loading="lazy"></div>
+						<div class="smart-product-body"><span class="smart-product-category">Hair care</span>
+							<h3>Hair Relaxer</h3>
+							<p class="body-copy small">Designed for smooth, manageable hair care routines.</p>
+							<div class="product-actions"><a href="order.html?product=Hair%20Relaxer" class="btn-smart">Order <i
+										class="bi bi-arrow-right"></i></a><a href="contact.html" class="btn-smart btn-smart-outline">Ask
+									us</a></div>
+						</div>
+					</article>
+				</div>
+				<div class="col" data-product data-category="hair" data-name="shine hair shampoo — green 5l">
+					<article class="smart-product">
+						<div class="smart-product-image"><img src="images/hair-shampoo-green-5l.jpg"
+								alt="Shine Hair Shampoo — Green 5L" loading="lazy"></div>
+						<div class="smart-product-body"><span class="smart-product-category">Hair care</span>
+							<h3>Shine Hair Shampoo — Green 5L</h3>
+							<p class="body-copy small">A practical 5L shampoo format for regular hair care.</p>
+							<div class="product-actions"><a href="order.html?product=Shine%20Hair%20Shampoo%20—%20Green%205L"
+									class="btn-smart">Order <i class="bi bi-arrow-right"></i></a><a href="contact.html"
+									class="btn-smart btn-smart-outline">Ask us</a></div>
+						</div>
+					</article>
+				</div>
+				<div class="col" data-product data-category="hair" data-name="shine hair shampoo — yellow 5l">
+					<article class="smart-product">
+						<div class="smart-product-image"><img src="images/hair-shampoo-yellow-5l.jpg"
+								alt="Shine Hair Shampoo — Yellow 5L" loading="lazy"></div>
+						<div class="smart-product-body"><span class="smart-product-category">Hair care</span>
+							<h3>Shine Hair Shampoo — Yellow 5L</h3>
+							<p class="body-copy small">Everyday cleansing in a family-size format.</p>
+							<div class="product-actions"><a href="order.html?product=Shine%20Hair%20Shampoo%20—%20Yellow%205L"
+									class="btn-smart">Order <i class="bi bi-arrow-right"></i></a><a href="contact.html"
+									class="btn-smart btn-smart-outline">Ask us</a></div>
+						</div>
+					</article>
+				</div>
+				<div class="col" data-product data-category="hair" data-name="shine hair shampoo — blue 5l">
+					<article class="smart-product">
+						<div class="smart-product-image"><img src="images/hair-shampoo-blue-5l.jpg"
+								alt="Shine Hair Shampoo — Blue 5L" loading="lazy"></div>
+						<div class="smart-product-body"><span class="smart-product-category">Hair care</span>
+							<h3>Shine Hair Shampoo — Blue 5L</h3>
+							<p class="body-copy small">A dependable shampoo option for everyday care.</p>
+							<div class="product-actions"><a href="order.html?product=Shine%20Hair%20Shampoo%20—%20Blue%205L"
+									class="btn-smart">Order <i class="bi bi-arrow-right"></i></a><a href="contact.html"
+									class="btn-smart btn-smart-outline">Ask us</a></div>
+						</div>
+					</article>
+				</div>
+				<div class="col" data-product data-category="hair" data-name="hair cream conditioner — white 5l">
+					<article class="smart-product">
+						<div class="smart-product-image"><img src="images/hair-conditioner-white-5l.jpg"
+								alt="Hair Cream Conditioner — White 5L" loading="lazy"></div>
+						<div class="smart-product-body"><span class="smart-product-category">Hair care</span>
+							<h3>Hair Cream Conditioner — White 5L</h3>
+							<p class="body-copy small">Conditioning care designed for smooth, manageable hair.</p>
+							<div class="product-actions"><a href="order.html?product=Hair%20Cream%20Conditioner%20—%20White%205L"
+									class="btn-smart">Order <i class="bi bi-arrow-right"></i></a><a href="contact.html"
+									class="btn-smart btn-smart-outline">Ask us</a></div>
+						</div>
+					</article>
+				</div>
+				<div class="col" data-product data-category="hair" data-name="hair cream conditioner — yellow 5l">
+					<article class="smart-product">
+						<div class="smart-product-image"><img src="images/hair-conditioner-yellow-5l.jpg"
+								alt="Hair Cream Conditioner — Yellow 5L" loading="lazy"></div>
+						<div class="smart-product-body"><span class="smart-product-category">Hair care</span>
+							<h3>Hair Cream Conditioner — Yellow 5L</h3>
+							<p class="body-copy small">Cream conditioning for regular hair care routines.</p>
+							<div class="product-actions"><a href="order.html?product=Hair%20Cream%20Conditioner%20—%20Yellow%205L"
+									class="btn-smart">Order <i class="bi bi-arrow-right"></i></a><a href="contact.html"
+									class="btn-smart btn-smart-outline">Ask us</a></div>
+						</div>
+					</article>
+				</div>
+				<div class="col" data-product data-category="hair" data-name="shine hair gel 120g">
+					<article class="smart-product">
+						<div class="smart-product-image"><img src="images/hair-gel-120g.jpg" alt="Shine Hair Gel 120g"
+								loading="lazy"></div>
+						<div class="smart-product-body"><span class="smart-product-category">Hair care</span>
+							<h3>Shine Hair Gel 120g</h3>
+							<p class="body-copy small">Helps style and hold hair while completing your routine.</p>
+							<div class="product-actions"><a href="order.html?product=Shine%20Hair%20Gel%20120g"
+									class="btn-smart">Order <i class="bi bi-arrow-right"></i></a><a href="contact.html"
+									class="btn-smart btn-smart-outline">Ask us</a></div>
+						</div>
+					</article>
+				</div>
+				<div class="col" data-product data-category="cleaning" data-name="shine dishwashing liquid 1l">
+					<article class="smart-product">
+						<div class="smart-product-image"><img src="images/dishwash-1l.jpg" alt="Shine Dishwashing Liquid 1L"
+								loading="lazy"></div>
+						<div class="smart-product-body"><span class="smart-product-category">Home care</span>
+							<h3>Shine Dishwashing Liquid 1L</h3>
+							<p class="body-copy small">For everyday dishwashing and kitchen care.</p>
+							<div class="product-actions"><a href="order.html?product=Shine%20Dishwashing%20Liquid%201L"
+									class="btn-smart">Order <i class="bi bi-arrow-right"></i></a><a href="contact.html"
+									class="btn-smart btn-smart-outline">Ask us</a></div>
+						</div>
+					</article>
+				</div>
+				<div class="col" data-product data-category="cleaning" data-name="general purpose cleaner — green 5l">
+					<article class="smart-product">
+						<div class="smart-product-image"><img src="images/general-purpose-green-5l.jpg"
+								alt="General Purpose Cleaner — Green 5L" loading="lazy"></div>
+						<div class="smart-product-body"><span class="smart-product-category">Home care</span>
+							<h3>General Purpose Cleaner — Green 5L</h3>
+							<p class="body-copy small">A versatile liquid cleaner for everyday household surfaces.</p>
+							<div class="product-actions"><a href="order.html?product=General%20Purpose%20Cleaner%20—%20Green%205L"
+									class="btn-smart">Order <i class="bi bi-arrow-right"></i></a><a href="contact.html"
+									class="btn-smart btn-smart-outline">Ask us</a></div>
+						</div>
+					</article>
+				</div>
+				<div class="col" data-product data-category="cleaning" data-name="general purpose cleaner — orange 5l">
+					<article class="smart-product">
+						<div class="smart-product-image"><img src="images/general-purpose-orange-5l.jpg"
+								alt="General Purpose Cleaner — Orange 5L" loading="lazy"></div>
+						<div class="smart-product-body"><span class="smart-product-category">Home care</span>
+							<h3>General Purpose Cleaner — Orange 5L</h3>
+							<p class="body-copy small">Practical household cleaning in a 5L format.</p>
+							<div class="product-actions"><a href="order.html?product=General%20Purpose%20Cleaner%20—%20Orange%205L"
+									class="btn-smart">Order <i class="bi bi-arrow-right"></i></a><a href="contact.html"
+									class="btn-smart btn-smart-outline">Ask us</a></div>
+						</div>
+					</article>
+				</div>
+				<div class="col" data-product data-category="cleaning" data-name="hand dishwashing liquid 5l">
+					<article class="smart-product">
+						<div class="smart-product-image"><img src="images/hand-dishwashing-5l.jpg" alt="Hand Dishwashing Liquid 5L"
+								loading="lazy"></div>
+						<div class="smart-product-body"><span class="smart-product-category">Home care</span>
+							<h3>Hand Dishwashing Liquid 5L</h3>
+							<p class="body-copy small">A larger format for regular dishwashing needs.</p>
+							<div class="product-actions"><a href="order.html?product=Hand%20Dishwashing%20Liquid%205L"
+									class="btn-smart">Order <i class="bi bi-arrow-right"></i></a><a href="contact.html"
+									class="btn-smart btn-smart-outline">Ask us</a></div>
+						</div>
+					</article>
+				</div>
+				<div class="col" data-product data-category="cleaning" data-name="hand wash liquid">
+					<article class="smart-product">
+						<div class="smart-product-image"><img src="images/hand-wash-liquid.jpg" alt="Hand Wash Liquid"
+								loading="lazy"></div>
+						<div class="smart-product-body"><span class="smart-product-category">Home care</span>
+							<h3>Hand Wash Liquid</h3>
+							<p class="body-copy small">Liquid hand wash for everyday hand-care routines.</p>
+							<div class="product-actions"><a href="order.html?product=Hand%20Wash%20Liquid" class="btn-smart">Order <i
+										class="bi bi-arrow-right"></i></a><a href="contact.html" class="btn-smart btn-smart-outline">Ask
+									us</a></div>
+						</div>
+					</article>
+				</div>
+				<div class="col" data-product data-category="cleaning" data-name="fabric softener 5l">
+					<article class="smart-product">
+						<div class="smart-product-image"><img src="images/softener-5l.jpg" alt="Fabric Softener 5L" loading="lazy">
+						</div>
+						<div class="smart-product-body"><span class="smart-product-category">Laundry</span>
+							<h3>Fabric Softener 5L</h3>
+							<p class="body-copy small">Helps leave fabrics feeling fresh and cared for.</p>
+							<div class="product-actions"><a href="order.html?product=Fabric%20Softener%205L" class="btn-smart">Order
+									<i class="bi bi-arrow-right"></i></a><a href="contact.html" class="btn-smart btn-smart-outline">Ask
+									us</a></div>
+						</div>
+					</article>
+				</div>
+				<div class="col" data-product data-category="cleaning" data-name="fabric softener — blue">
+					<article class="smart-product">
+						<div class="smart-product-image"><img src="images/softener-blue.jpg" alt="Fabric Softener — Blue"
+								loading="lazy"></div>
+						<div class="smart-product-body"><span class="smart-product-category">Laundry</span>
+							<h3>Fabric Softener — Blue</h3>
+							<p class="body-copy small">Fabric care for regular laundry routines.</p>
+							<div class="product-actions"><a href="order.html?product=Fabric%20Softener%20—%20Blue"
+									class="btn-smart">Order <i class="bi bi-arrow-right"></i></a><a href="contact.html"
+									class="btn-smart btn-smart-outline">Ask us</a></div>
+						</div>
+					</article>
+				</div>
+				<div class="col" data-product data-category="cleaning" data-name="fabric softener — pink">
+					<article class="smart-product">
+						<div class="smart-product-image"><img src="images/softener-pink.jpg" alt="Fabric Softener — Pink"
+								loading="lazy"></div>
+						<div class="smart-product-body"><span class="smart-product-category">Laundry</span>
+							<h3>Fabric Softener — Pink</h3>
+							<p class="body-copy small">Softening care for everyday laundry.</p>
+							<div class="product-actions"><a href="order.html?product=Fabric%20Softener%20—%20Pink"
+									class="btn-smart">Order <i class="bi bi-arrow-right"></i></a><a href="contact.html"
+									class="btn-smart btn-smart-outline">Ask us</a></div>
+						</div>
+					</article>
+				</div>
+				<div class="col" data-product data-category="cleaning" data-name="liquid glass cleaner">
+					<article class="smart-product">
+						<div class="smart-product-image"><img src="images/glass-cleaner.jpg" alt="Liquid Glass Cleaner"
+								loading="lazy"></div>
+						<div class="smart-product-body"><span class="smart-product-category">Home care</span>
+							<h3>Liquid Glass Cleaner</h3>
+							<p class="body-copy small">Made for cleaning glass and leaving surfaces clear.</p>
+							<div class="product-actions"><a href="order.html?product=Liquid%20Glass%20Cleaner" class="btn-smart">Order
+									<i class="bi bi-arrow-right"></i></a><a href="contact.html" class="btn-smart btn-smart-outline">Ask
+									us</a></div>
+						</div>
+					</article>
+				</div>
+				<div class="col" data-product data-category="cleaning" data-name="napkins & toilet paper">
+					<article class="smart-product">
+						<div class="smart-product-image"><img src="images/napkins-toilet-paper.jpg" alt="Napkins & Toilet Paper"
+								loading="lazy"></div>
+						<div class="smart-product-body"><span class="smart-product-category">Home care</span>
+							<h3>Napkins & Toilet Paper</h3>
+							<p class="body-copy small">Everyday paper essentials for homes and businesses.</p>
+							<div class="product-actions"><a href="order.html?product=Napkins%20&%20Toilet%20Paper"
+									class="btn-smart">Order <i class="bi bi-arrow-right"></i></a><a href="contact.html"
+									class="btn-smart btn-smart-outline">Ask us</a></div>
+						</div>
+					</article>
+				</div>
+				<div class="col" data-product data-category="cleaning" data-name="toilet paper">
+					<article class="smart-product">
+						<div class="smart-product-image"><img src="images/toilet-paper.jpg" alt="Toilet Paper" loading="lazy"></div>
+						<div class="smart-product-body"><span class="smart-product-category">Home care</span>
+							<h3>Toilet Paper</h3>
+							<p class="body-copy small">An everyday household essential.</p>
+							<div class="product-actions"><a href="order.html?product=Toilet%20Paper" class="btn-smart">Order <i
+										class="bi bi-arrow-right"></i></a><a href="contact.html" class="btn-smart btn-smart-outline">Ask
+									us</a></div>
+						</div>
+					</article>
+				</div>
+				<div class="col" data-product data-category="personal" data-name="nail polish remover 100ml">
+					<article class="smart-product">
+						<div class="smart-product-image"><img src="images/nail-polish-remover-100ml.jpg"
+								alt="Nail Polish Remover 100ml" loading="lazy"></div>
+						<div class="smart-product-body"><span class="smart-product-category">Personal care</span>
+							<h3>Nail Polish Remover 100ml</h3>
+							<p class="body-copy small">A convenient format for nail-care routines.</p>
+							<div class="product-actions"><a href="order.html?product=Nail%20Polish%20Remover%20100ml"
+									class="btn-smart">Order <i class="bi bi-arrow-right"></i></a><a href="contact.html"
+									class="btn-smart btn-smart-outline">Ask us</a></div>
+						</div>
+					</article>
+				</div>
+				<div class="col" data-product data-category="personal" data-name="nail polish remover 1l">
+					<article class="smart-product">
+						<div class="smart-product-image"><img src="images/nail-polish-remover-1l.jpg" alt="Nail Polish Remover 1L"
+								loading="lazy"></div>
+						<div class="smart-product-body"><span class="smart-product-category">Personal care</span>
+							<h3>Nail Polish Remover 1L</h3>
+							<p class="body-copy small">A larger format for salons and frequent use.</p>
+							<div class="product-actions"><a href="order.html?product=Nail%20Polish%20Remover%201L"
+									class="btn-smart">Order <i class="bi bi-arrow-right"></i></a><a href="contact.html"
+									class="btn-smart btn-smart-outline">Ask us</a></div>
+						</div>
+					</article>
+				</div>
+				<div class="col" data-product data-category="personal" data-name="pure glycerine">
+					<article class="smart-product">
+						<div class="smart-product-image"><img src="images/pure-glycerine.jpg" alt="Pure Glycerine" loading="lazy">
+						</div>
+						<div class="smart-product-body"><span class="smart-product-category">Personal care</span>
+							<h3>Pure Glycerine</h3>
+							<p class="body-copy small">A versatile glycerine product for personal care routines.</p>
+							<div class="product-actions"><a href="order.html?product=Pure%20Glycerine" class="btn-smart">Order <i
+										class="bi bi-arrow-right"></i></a><a href="contact.html" class="btn-smart btn-smart-outline">Ask
+									us</a></div>
+						</div>
+					</article>
+				</div>
+				<div class="col" data-product data-category="personal" data-name="glyseline white">
+					<article class="smart-product">
+						<div class="smart-product-image"><img src="images/glyseline-white.jpg" alt="Glyseline White" loading="lazy">
+						</div>
+						<div class="smart-product-body"><span class="smart-product-category">Personal care</span>
+							<h3>Glyseline White</h3>
+							<p class="body-copy small">A personal-care staple for everyday routines.</p>
+							<div class="product-actions"><a href="order.html?product=Glyseline%20White" class="btn-smart">Order <i
+										class="bi bi-arrow-right"></i></a><a href="contact.html" class="btn-smart btn-smart-outline">Ask
+									us</a></div>
+						</div>
+					</article>
+				</div>
+			</div>
+			<div id="smartNoProducts" class="product-empty mt-4" hidden><i class="bi bi-search"></i>
+				<p>No products match your search.</p>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="row g-5 pb-4 border-bottom border-light border-opacity-10">
+				<div class="col-lg-4">
+					<div class="d-flex align-items-center gap-3">
+						<div class="footer-logo-badge"><img src="images/logo.webp" alt="Shine" class="footer-shine-logo"></div><span
+							class="footer-manufacturer">Manufactured by<br><strong>Oribut Company Ltd</strong></span>
+					</div>
+					<div class="brand-dots"><span></span><span></span><span></span></div>
+					<p class="foot-desc mt-3">Oribut Company Ltd — personal care, laundry and home care products manufactured in
+						Rwanda.</p>
+				</div>
+				<div class="col-6 col-lg-2">
+					<h4 class="foot-heading">Products</h4>
+					<ul class="list-unstyled foot-links">
+						<li><a href="products.html">All Products</a></li>
+						<li><a href="hair-care.html">Hair Care</a></li>
+						<li><a href="personal-care.html">Personal Care</a></li>
+						<li><a href="home-care.html">Home & Laundry</a></li>
+					</ul>
+				</div>
+				<div class="col-6 col-lg-3">
+					<h4 class="foot-heading">Company</h4>
+					<ul class="list-unstyled foot-links">
+						<li><a href="about.html">About</a></li>
+						<li><a href="why-shine.html">Why Oribut</a></li>
+						<li><a href="careers.html">Careers</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+				<div class="col-6 col-lg-3">
+					<h4 class="foot-heading">Order</h4>
+					<ul class="list-unstyled foot-links">
+						<li><a href="order.html">Place an order</a></li>
+						<li><a href="tel:+250790666679">0790666679</a></li>
+						<li><a href="https://wa.me/250790666679" target="_blank">WhatsApp</a></li>
+						<li><a href="mailto:oributcustomerservice@gmail.com">oributcustomerservice@gmail.com</a></li>
+						
+						<li><a href="mailto:info@oributcompany.com">info@oributcompany.com</a></li>
+						<li><a href="www.oributcompany.com">www.oributcompany.com</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="d-flex flex-wrap justify-content-between pt-4 foot-bottom"><span>© 2026 Oribut Company Ltd. All rights
+					reserved.</span><span>Made in Rwanda</span></div>
+		</div>
+	</footer><a href="https://wa.me/250790666679" target="_blank" class="floating-chat">Talk to us <span
+			class="floating-chat-icon"><i class="bi bi-whatsapp"></i></span></a>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="app.js"></script>
+</body>
+
+</html>
