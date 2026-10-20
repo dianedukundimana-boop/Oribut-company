@@ -64,4 +64,57 @@ document.addEventListener('DOMContentLoaded',()=>{
     if (img) openLightbox(img.currentSrc || img.src, img.alt);
   });
 });
-function handleContactForm(e){e.preventDefault();const n=document.getElementById('contactName').value,email=document.getElementById('contactEmail').value,t=document.getElementById('contactTopic').value,m=document.getElementById('contactMessage').value;const subject=encodeURIComponent('Oribut enquiry - '+t);const body=encodeURIComponent(`Name: ${n}\nEmail: ${email}\nTopic: ${t}\n\n${m}`);window.location.href=`mailto:oributcoltd@gmail.com?subject=${subject}&body=${body}`;document.getElementById('contactSuccess').hidden=false;return false}
+/* ---------- Contact form ----------
+   When the visitor presses "Send enquiry", Gmail's new-message page opens
+   with everything already filled in and addressed to our email.
+   (On phones the normal mail app opens instead.) */
+const CONTACT_EMAIL = 'oributcustomerservice@gmail.com';
+
+function handleContactForm(e) {
+  e.preventDefault();
+  const form = e.target;
+  const ok = document.getElementById('contactSuccess');
+  const name = document.getElementById('contactName').value.trim();
+  const email = document.getElementById('contactEmail').value.trim();
+  const topic = document.getElementById('contactTopic').value;
+  const message = document.getElementById('contactMessage').value.trim();
+
+  const subject = 'Oribut enquiry - ' + topic;
+  const body = 'Name: ' + name + '\nEmail: ' + email + '\nTopic: ' + topic + '\n\n' + message;
+  const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+  const url = isMobile
+    ? 'mailto:' + CONTACT_EMAIL + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body)
+    : 'https://mail.google.com/mail/?view=cm&fs=1&to=' + encodeURIComponent(CONTACT_EMAIL) +
+      '&su=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+
+  if (isMobile) {
+    window.location.href = url;
+  } else {
+    const w = window.open(url, '_blank');
+    if (!w) window.location.href = url; // popup blocked: open in same tab
+  }
+
+  ok.classList.add('alert-success');
+  ok.classList.remove('alert-danger');
+  ok.innerHTML = 'Your email is ready. Press <strong>Send</strong> in the email window that opened. ' +
+    'If nothing opened, <a href="' + url + '" target="_blank" rel="noopener">click here</a>.';
+  ok.hidden = false;
+  return false;
+}
+
+/* ---------- Email links open Gmail compose page ----------
+   On computers, clicking any email link opens Gmail's "new message" page
+   in the browser (no mail app needed). On phones the normal mail app opens. */
+document.addEventListener('click', function (e) {
+  const a = e.target.closest('a[href^="mailto:"]');
+  if (!a) return;
+  if (/Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) return;
+  e.preventDefault();
+  const url = new URL(a.getAttribute('href'));
+  const to = decodeURIComponent(url.pathname);
+  const params = new URLSearchParams(url.search);
+  const gmail = 'https://mail.google.com/mail/?view=cm&fs=1&to=' + encodeURIComponent(to) +
+    (params.get('subject') ? '&su=' + encodeURIComponent(params.get('subject')) : '') +
+    (params.get('body') ? '&body=' + encodeURIComponent(params.get('body')) : '');
+  window.open(gmail, '_blank', 'noopener');
+});
