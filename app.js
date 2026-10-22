@@ -13,9 +13,6 @@ document.addEventListener('DOMContentLoaded',()=>{
   buttons.forEach(b=>b.addEventListener('click',()=>{buttons.forEach(x=>x.classList.remove('active'));b.classList.add('active');active=b.dataset.smartFilter;filter()}));
   search?.addEventListener('input',filter); filter();
 
-  const params=new URLSearchParams(location.search), p=params.get('product'), select=document.getElementById('orderProduct');
-  if(p&&select){[...select.options].forEach(o=>{if(o.text===p)select.value=p})}
-  document.getElementById('orderForm')?.addEventListener('submit',e=>{e.preventDefault();const name=document.getElementById('orderName').value,phone=document.getElementById('orderPhone').value,prod=document.getElementById('orderProduct').value,qty=document.getElementById('orderQty').value,note=document.getElementById('orderNote').value;const msg=`Hello Oribut, I would like to order:%0A%0AProduct: ${encodeURIComponent(prod)}%0AQuantity: ${encodeURIComponent(qty)}%0ACustomer: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0ANote: ${encodeURIComponent(note)}`;window.open('https://wa.me/250783456891?text='+msg,'_blank')});
 
   /* ---------- Hero slideshow (About & Personal Care pages) ---------- */
   const slideshows = [...document.querySelectorAll('.page-hero-media')].filter(c => c.querySelectorAll('.hero-slide').length > 1);

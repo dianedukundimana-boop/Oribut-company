@@ -1895,3 +1895,28 @@ img[loading="lazy"].loaded {
 	width: 46px;
 	background-color: var(--orange-deep);
 }
+
+/* ---------- Order form ---------- */
+.order-optional { font-weight: 400; color: var(--ink-soft); font-size: .85em; }
+.order-lines-head { margin: 28px 0 10px; }
+.order-lines-title { font-family: 'Fraunces', serif; font-size: 1.25rem; margin: 0; color: var(--navy-deep); }
+.order-line-labels, .order-line { display: grid; grid-template-columns: minmax(0, 1fr) 110px 70px; gap: 10px; align-items: center; }
+.order-line-labels { margin-bottom: 6px; font-weight: 600; font-size: .9rem; color: var(--ink-soft); }
+.order-line { margin-bottom: 10px; }
+.order-line .form-select, .order-line .form-control { min-height: 46px; }
+.order-line .order-qty { text-align: center; font-weight: 700; }
+.order-remove { border: 0; background: none; padding: 0; color: #b3261e; font-size: .9rem; text-decoration: underline; cursor: pointer; }
+.order-remove[hidden] { display: none; }
+.order-add { padding: 9px 18px; font-size: .95rem; }
+.order-fine { margin: 12px 0 0; font-size: .875rem; color: var(--ink-soft); }
+.order-summary { list-style: none; padding: 0; margin: 10px 0 8px; }
+.order-summary li { padding: 6px 0; border-bottom: 1px solid #e6ece8; font-size: .95rem; }
+.order-summary li:last-child { border-bottom: 0; }
+.order-summary-empty { color: var(--ink-soft); }
+.order-total { font-weight: 700; color: var(--navy-deep); }
+@media (max-width: 575.98px) {
+	.order-line-labels { display: none; }
+	.order-line { grid-template-columns: 1fr 100px; padding-bottom: 12px; border-bottom: 1px dashed #cfd8d2; }
+	.order-line .order-prod { grid-column: 1 / -1; }
+	.order-line .order-remove { justify-self: end; }
+}

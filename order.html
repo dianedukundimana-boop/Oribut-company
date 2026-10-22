@@ -24,7 +24,7 @@
 		<div class="container flex-wrap"><a class="navbar-brand d-flex align-items-center gap-2" href="index.html"><img
 					src="images/logo.webp" alt="Shine" class="brand-logo"><span
 					
-						class="brand-caption-sub">Made in Rwanda </span></span></a><button class="navbar-toggler"
+						class="brand-caption-sub">Made in Rwanda </span></a><button class="navbar-toggler"
 				type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"><span
 					class="navbar-toggler-icon"></span></button>
 			<div class="collapse navbar-collapse" id="navMenu">
@@ -44,13 +44,12 @@
 		<div class="brand-stripe"></div>
 	</nav>
 	<section class="page-hero">
-		<div class="page-hero-media"><img src="images/Order.jpg" alt="Build your order enquiry."></div>
+		<div class="page-hero-media"><img src="images/Order.jpg" alt="Place your order."></div>
 		<div class="page-hero-overlay"></div>
 		<div class="container page-hero-content" data-reveal><span class="eyebrow eyebrow-light"><span
 					class="eyebrow-dash"></span>ORDER</span>
-			<h1>Build your order enquiry.</h1>
-			<p>Choose products and quantities, then send the request to the Oribut team. This version is designed to work
-				without a backend and can be connected to your stock/order system later.</p>
+			<h1>Place your order.</h1>
+			<p>Pick your products and quantities. We will open WhatsApp with your order ready to send to the Oribut team on 0790 666 679.</p>
 		</div>
 	</section>
 	<section class="page-section">
@@ -59,89 +58,103 @@
 				<div class="col-lg-7">
 					<div class="smart-card">
 						<h2 class="page-title">Order request</h2>
-						<form id="orderForm">
+						<form id="shineOrderForm" novalidate>
 							<div class="row g-3">
-								<div class="col-md-6"><label class="form-label">Customer name</label><input required
-										class="form-control" id="orderName"></div>
-								<div class="col-md-6"><label class="form-label">Phone / WhatsApp</label><input required
-										class="form-control" id="orderPhone"></div>
-								<div class="col-12"><label class="form-label">Product</label><select required class="form-select"
-										id="orderProduct">
+								<div class="col-md-6"><label class="form-label" for="orderName">Your name</label><input required class="form-control" id="orderName" autocomplete="name"></div>
+								<div class="col-md-6"><label class="form-label" for="orderPhone">Phone / WhatsApp</label><input required type="tel" inputmode="tel" class="form-control" id="orderPhone" placeholder="07XX XXX XXX" autocomplete="tel"></div>
+								<div class="col-12"><label class="form-label" for="orderArea">Delivery area <span class="order-optional">(optional)</span></label><input class="form-control" id="orderArea" placeholder="e.g. Kimironko, Kigali"></div>
+							</div>
+							<div class="order-lines-head"><h3 class="order-lines-title">Products</h3></div>
+							<div id="orderLines">
+								<div class="order-line-labels" aria-hidden="true"><span>Select product</span><span>Quantity</span></div>
+								<div class="order-line">
+									<select class="form-select order-prod" aria-label="Select product" required>
 										<option value="">Select a product</option>
-										<option>Nourishing Hair Food</option>
-										<option>Hair Relaxer</option>
-										<option>Shine Hair Shampoo — Green 5L</option>
-									    <option>Shine Hair Shampoo — Green 1L</option>
-										<option>Shine Hair Shampoo — Yellow 5L</option>
-									    <option>Shine Hair Shampoo — Yellow 1L</option>
-										<option>Shine Hair Shampoo — white 5L</option>
-									    <option>Shine Hair Shampoo — white 1L</option>
-										<option>Hair Cream Conditioner — White 5L</option>
-									    <option>Hair Cream Conditioner — White 1L</option>
-										<option>Hair Cream Conditioner — Yellow 5L</option>
-									    <option>Hair Cream Conditioner — Yellow 1L</option>
-										<option>Shine Hair Gel 120g</option>
-										<option>Shine Dishwashing Liquid 1L</option>
-									    <option>Shine Dishwashing Liquid 5L</option>
-										<option>General Purpose Cleaner — Green 5L</option>
-										<option>General Purpose Cleaner — Orange 5L</option>
-										<option>Hand Dishwashing Liquid 5L</option>
-									    <option>Hand Dishwashing Liquid 1L</option>
-										<option>Hand Wash Liquid Green</option>
-									    <option>Hand Wash Liquid Pink</option>
-									    <option>Hand Wash Liquid Yellow</option>
-										<option>Era Fabric Softener Blue 20L </option>
-										<option>Era Fabric Softener — Blue 5L</option>
-										<option>Era Fabric Softener — Pink 1L</option>
-									    <option>Era Synthetic Detergent Powder</option>
-									    <option>Era Liquid Oxygen Bleach</option>
-									    <option>Era Liquid Bleach</option>
-									    <option>Era Synthetic Liquid Laundry Detergent for Machine Wash </option>
-									    <option>Era Synthetic Liquid Laundry Detergent for Hand Wash </option>
-									    <option>Era Tile cleaner</option>
-									    
-										<option>Era Liquid Glass Cleaner</option>
-										<option>Shine paper serviettes Paper</option>
-										<option>Shine Toilet Paper</option>
-									    <option>Shine Toilet Paper Blue </option>
-									    <option>Shine Kitchen Towels </option>
-									    
-										<option>Nail Polish Remover 100ml</option>
-										<option>Nail Polish Remover 1L</option>
-										<option>Pure Glycerine</option>
-										<option>Shine Glyseline White</option>
-									    <option>Shine Glyseline White</option>
-									    <option>Shine Glyseline Red</option>
-									    <option>Shine Glyseline red </option>
-									    <option>Era Glyseline White </option>
-									    <option>Era Glyseline red </option>
-									    <option>Shine Leave-in treatment </option>
-									    <option>Shine Hair Spray</option>
-									    <option>Shine Hair Food Yellow</option>
-									    <option>Shine Hair food green </option>
-									    <option>Shine baby Jelly</option>
-									    <option>Shine Petroleum jelly</option>
-									    <option>Era body Lotion</option>
-									    <option>Era after shave </option>
-									    
-									
-									</select></div>
-								<div class="col-md-4"><label class="form-label">Quantity</label><input required min="1" type="number"
-										value="1" class="form-control" id="orderQty"></div>
-								<div class="col-md-8"><label class="form-label">Additional note</label><input class="form-control"
-										id="orderNote" placeholder="Size, colour, delivery note..."></div>
-							</div><button type="submit" class="btn-smart mt-4">Send order request <i
-									class="bi bi-whatsapp"></i></button>
+										<optgroup label="Hair care">
+											<option value="Nourishing Hair Food">Nourishing Hair Food</option>
+											<option value="Shine Hair Food Yellow">Shine Hair Food Yellow</option>
+											<option value="Shine Hair Food Green">Shine Hair Food Green</option>
+											<option value="Hair Relaxer">Hair Relaxer</option>
+											<option value="Shine Hair Shampoo — Blue 5L">Shine Hair Shampoo — Blue 5L</option>
+											<option value="Shine Hair Shampoo — Green 5L">Shine Hair Shampoo — Green 5L</option>
+											<option value="Shine Hair Shampoo — Green 1L">Shine Hair Shampoo — Green 1L</option>
+											<option value="Shine Hair Shampoo — Yellow 5L">Shine Hair Shampoo — Yellow 5L</option>
+											<option value="Shine Hair Shampoo — Yellow 1L">Shine Hair Shampoo — Yellow 1L</option>
+											<option value="Shine Hair Shampoo — White 5L">Shine Hair Shampoo — White 5L</option>
+											<option value="Shine Hair Shampoo — White 1L">Shine Hair Shampoo — White 1L</option>
+											<option value="Hair Cream Conditioner — White 5L">Hair Cream Conditioner — White 5L</option>
+											<option value="Hair Cream Conditioner — White 1L">Hair Cream Conditioner — White 1L</option>
+											<option value="Hair Cream Conditioner — Yellow 5L">Hair Cream Conditioner — Yellow 5L</option>
+											<option value="Hair Cream Conditioner — Yellow 1L">Hair Cream Conditioner — Yellow 1L</option>
+											<option value="Shine Hair Gel 120g">Shine Hair Gel 120g</option>
+											<option value="Shine Leave-in Treatment">Shine Leave-in Treatment</option>
+											<option value="Shine Hair Spray">Shine Hair Spray</option>
+										</optgroup>
+										<optgroup label="Home &amp; laundry">
+											<option value="Shine Dishwashing Liquid 1L">Shine Dishwashing Liquid 1L</option>
+											<option value="Shine Dishwashing Liquid 5L">Shine Dishwashing Liquid 5L</option>
+											<option value="General Purpose Cleaner — Green 5L">General Purpose Cleaner — Green 5L</option>
+											<option value="General Purpose Cleaner — Orange 5L">General Purpose Cleaner — Orange 5L</option>
+											<option value="Hand Dishwashing Liquid 5L">Hand Dishwashing Liquid 5L</option>
+											<option value="Hand Dishwashing Liquid 1L">Hand Dishwashing Liquid 1L</option>
+											<option value="Hand Wash Liquid Green">Hand Wash Liquid Green</option>
+											<option value="Hand Wash Liquid Pink">Hand Wash Liquid Pink</option>
+											<option value="Hand Wash Liquid Yellow">Hand Wash Liquid Yellow</option>
+											<option value="Era Fabric Softener — Blue 20L">Era Fabric Softener — Blue 20L</option>
+											<option value="Era Fabric Softener — Blue 5L">Era Fabric Softener — Blue 5L</option>
+											<option value="Era Fabric Softener — Pink 1L">Era Fabric Softener — Pink 1L</option>
+											<option value="Era Synthetic Detergent Powder">Era Synthetic Detergent Powder</option>
+											<option value="Era Liquid Oxygen Bleach">Era Liquid Oxygen Bleach</option>
+											<option value="Era Liquid Bleach">Era Liquid Bleach</option>
+											<option value="Era Synthetic Liquid Laundry Detergent for Machine Wash">Era Synthetic Liquid Laundry Detergent for Machine Wash</option>
+											<option value="Era Synthetic Liquid Laundry Detergent for Hand Wash">Era Synthetic Liquid Laundry Detergent for Hand Wash</option>
+											<option value="Era Tile Cleaner">Era Tile Cleaner</option>
+											<option value="Era Liquid Glass Cleaner">Era Liquid Glass Cleaner</option>
+										</optgroup>
+										<optgroup label="Paper products">
+											<option value="Shine Paper Serviettes">Shine Paper Serviettes</option>
+											<option value="Shine Toilet Paper">Shine Toilet Paper</option>
+											<option value="Shine Toilet Paper Blue">Shine Toilet Paper Blue</option>
+											<option value="Shine Kitchen Towels">Shine Kitchen Towels</option>
+										</optgroup>
+										<optgroup label="Personal care">
+											<option value="Nail Polish Remover 100ml">Nail Polish Remover 100ml</option>
+											<option value="Nail Polish Remover 1L">Nail Polish Remover 1L</option>
+											<option value="Pure Glycerine">Pure Glycerine</option>
+											<option value="Shine Glyseline White">Shine Glyseline White</option>
+											<option value="Shine Glyseline Red">Shine Glyseline Red</option>
+											<option value="Era Glyseline White">Era Glyseline White</option>
+											<option value="Era Glyseline Red">Era Glyseline Red</option>
+											<option value="Shine Baby Jelly">Shine Baby Jelly</option>
+											<option value="Shine Petroleum Jelly">Shine Petroleum Jelly</option>
+											<option value="Era Body Lotion">Era Body Lotion</option>
+											<option value="Era After Shave">Era After Shave</option>
+										</optgroup>
+									</select>
+									<input type="number" class="form-control order-qty" min="1" max="9999" value="1" inputmode="numeric" aria-label="Quantity">
+									<button type="button" class="order-remove" hidden>Remove</button>
+								</div>
+							</div>
+							<button type="button" id="addLine" class="btn-smart-outline order-add">+ Add another product</button>
+							<div class="mt-4"><label class="form-label" for="orderNote">Additional note <span class="order-optional">(optional)</span></label><input class="form-control" id="orderNote" placeholder="Colour, delivery time, or a product not in the list"></div>
+							<div id="orderError" class="alert alert-danger mt-3 mb-0" role="alert" hidden></div>
+							<button type="submit" class="btn-smart mt-4">Send order on WhatsApp <i class="bi bi-whatsapp"></i></button>
+							<p class="order-fine">Your order opens in WhatsApp, ready to send to Oribut on 0790 666 679. Nothing is sent until you press Send there.</p>
+							<div id="orderSent" class="alert alert-success mt-3 mb-0" role="status" hidden></div>
 						</form>
 					</div>
 				</div>
 				<div class="col-lg-5">
-					<div class="detail-panel"><span class="section-kicker">How it works</span>
+					<div class="detail-panel"><span class="section-kicker">Your order</span>
+						<ul id="orderSummary" class="order-summary"></ul>
+						<p id="orderTotal" class="order-total mb-0"></p>
+						<hr>
+						<span class="section-kicker">How it works</span>
 						<ol class="body-copy" style="line-height:2">
-							<li>Select the product.</li>
-							<li>Enter quantity and contact details.</li>
-							<li>Send the request to the Oribut team.</li>
-							<li>Our team confirms availability and next steps.</li>
+							<li>Choose your products and quantities.</li>
+							<li>Enter your name and phone number.</li>
+							<li>Press Send order. WhatsApp opens with the order written out.</li>
+							<li>Our team confirms availability and delivery.</li>
 						</ol>
 						<hr>
 						<p class="mb-0"><strong>Trade customers:</strong> Contact us for larger quantities and distribution
@@ -201,6 +214,7 @@
 			class="floating-chat-icon"><i class="bi bi-whatsapp"></i></span></a>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 	<script src="app.js"></script>
+	<script src="order.js"></script>
 </body>
 
 </html>
